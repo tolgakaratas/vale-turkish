@@ -27,9 +27,6 @@ jobs:
 
     - name: Configure Vale
       run: |
-        mkdir -p styles
-        cp -r styles/Turkish styles/
-        cp -r styles/dictionaries styles/
         # Use local config for testing
         echo "StylesPath = styles" > .vale.ini
         echo "MinAlertLevel = suggestion" >> .vale.ini
