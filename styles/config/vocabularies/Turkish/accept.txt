@@ -36,3 +36,21 @@ projeler
 birikimine
 hazinedir
 zamanda
+
+# Fiil Çekimleri ve Zamirler (Hunspell Eksikleri - Doğru Kelimeler)
+gidersin
+gelirsin
+gidiyorum
+geliyorum
+gittim
+geldim
+edersin
+bize
+sana
+oldu
+bunun
+olur
+etmektedir
+neticesinde
+konuyla
+ekte
