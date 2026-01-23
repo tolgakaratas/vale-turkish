@@ -1,0 +1,55 @@
+# Sadelik ve Duru Türkçe Kuralları
+# Karmaşık ve uzun ifadeler yerine daha yalın ve anlaşılır alternatifler önerir.
+
+extends: substitution
+# Parametre sırası: 1. Öneri (Doğru), 2. Eşleşen (Yanlış)
+message: "'%s' kullanın ('%s' yerine)"
+level: suggestion
+ignorecase: true
+swap:
+  # Gereksiz Yardımcı Fiiller
+  etki etmek: etkilemek
+  umut etmek: ummak
+  sevk etmek: göndermek
+  talep etmek: istemek
+  arz etmek: sunmak
+  teşkil etmek: oluşturmak
+  ihtiva etmek: içermek
+  refakat etmek: eşlik etmek
+  icra etmek: yapmak
+  temin etmek: sağlamak
+  tespit etmek: belirlemek
+  ilave etmek: eklemek
+  muhafaza etmek: korumak
+  müdafaa etmek: savunmak
+  
+  # Karmaşık/Eskimiş İfadeler
+  mamafih: bununla birlikte
+  binaenaleyh: dolayısıyla
+  bilahare: daha sonra
+  müteakip: sonra
+  evvelemirde: öncelikle
+  hasbelkader: tesadüfen
+  her ne kadar: olsa da
+  mevzu bahis: söz konusu
+  
+  # Gereksiz Uzatmalar
+  yapılmakta olan: yapılan
+  edilmekte olan: edilen
+  gerçekleştirilen: yapılan
+  gerçekleştirilmekte: yapılıyor
+  bulunmaktadır: var
+  yer almaktadır: var
+  görülmektedir: görünüyor
+  bilinmektedir: biliniyor
+  sağlanmaktadır: sağlanıyor
+  sunulmaktadır: sunuluyor
+  
+  # Resmiyet/Ağırlık
+  tarafından: (aktif cümle kurun)
+  itibariyle: itibarıyla
+  noktasında: konusunda
+  bağlamında: kapsamında
+  çerçevesinde: kapsamında
+  nezdinde: katında
+  açısından: bakımından
