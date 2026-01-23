@@ -72,7 +72,7 @@ scoop install vale
 #### Otomatik Kurulum (Önerilen)
 
 ```bash
-# Repo'yu klonlayın
+# Projeyi kendi bilgisayarınıza indirin (Klonlayın)
 git clone https://github.com/tolgakaratas/vale-turkish.git
 
 # Kurulum scriptini çalıştırın
