@@ -1,0 +1,18 @@
+extends: substitution
+message: "'ki' bağlacı ayrı yazılmalı: '%s' yerine '%s'"
+level: warning
+link: https://www.tdk.gov.tr/icerik/yazim-kurallari/ki-baglaci/
+ignorecase: true
+swap:
+  öyleki: öyle ki
+  şöyleki: şöyle ki
+  nasılki: nasıl ki
+  demekki: demek ki
+  kaldıki: kaldı ki
+  baksanaki: baksana ki
+  hattaki: hatta ki
+  mademki: madem ki
+  meğerki: meğer ki
+  sanki: san ki
+  yeterki: yeter ki
+  bileki: bile ki

@@ -1,0 +1,18 @@
+extends: existence
+message: "'de/da' bağlacı ayrı yazılır. '%s' ifadesini kontrol edin."
+level: warning
+link: https://www.tdk.gov.tr/icerik/yazim-kurallari/de-da-baglaci/
+ignorecase: false
+tokens:
+  - 'bende[^n]'
+  - 'sende[^n]'
+  - 'onda[^n]'
+  - 'bizde[^n]'
+  - 'sizde[^n]'
+  - 'onlarda[^n]'
+  - 'evdede'
+  - 'işdede'
+  - 'okuldada'
+  - 'buradada'
+  - 'oradada'
+  - 'şuradada'

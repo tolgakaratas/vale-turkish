@@ -1,0 +1,6 @@
+extends: repetition
+message: "'%s' kelimesi tekrar edilmiş."
+level: warning
+ignorecase: true
+tokens:
+  - '\b(\w+)\b\s+\1\b'

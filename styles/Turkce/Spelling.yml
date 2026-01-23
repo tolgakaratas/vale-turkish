@@ -1,0 +1,30 @@
+# Türkçe Yazım Denetimi
+# Hunspell sözlüğü kullanarak Türkçe kelimeleri kontrol eder
+
+extends: spelling
+message: "'%s' kelimesi yanlış yazılmış olabilir."
+level: error
+link: https://sozluk.gov.tr/
+
+# Sözlük ayarları
+dicpath: dictionaries
+dictionaries:
+  - tr
+
+# Varsayılan İngilizce sözlüğü kullanma
+append: false
+
+# Özel filtreler - bunları yoksay
+filters:
+  # URL'ler
+  - '[a-zA-Z]+://[^\s]+'
+  # E-posta adresleri
+  - '\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{2,}\b'
+  # Dosya yolları
+  - '(/[a-zA-Z0-9._-]+)+'
+  # Kod blokları içindeki kelimeler (backtick)
+  - '`[^`]+`'
+  # Sayılar ve tarihler
+  - '\b\d+[.,]?\d*\b'
+  # Kısaltmalar (büyük harfle yazılanlar)
+  - '\b[A-Z]{2,}\b'

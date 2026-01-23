@@ -1,0 +1,27 @@
+extends: substitution
+message: "'%s' yerine '%s' kullanın"
+level: error
+link: https://sozluk.gov.tr/
+ignorecase: true
+swap:
+  yanlız: yalnız
+  herzaman: her zaman
+  bişey: bir şey
+  bişi: bir şey
+  naber: ne haber
+  nbr: ne haber
+  slm: selam
+  mrb: merhaba
+  sağol: sağ ol
+  eyw: eyvallah
+  tşk: teşekkürler
+  teşekürler: teşekkürler
+  teşekür: teşekkür
+  gelicem: geleceğim
+  gidicem: gideceğim
+  yapıcam: yapacağım
+  edicek: edecek
+  diğil: değil
+  yokki: yok ki
+  varki: var ki
+  eger: eğer

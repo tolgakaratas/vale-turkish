@@ -1,0 +1,27 @@
+extends: substitution
+message: "'%s' ayrı yazılmalı: '%s'"
+level: error
+link: https://www.tdk.gov.tr/icerik/yazim-kurallari/ayri-yazilan-birlesik-kelimeler/
+ignorecase: true
+swap:
+  birşey: bir şey
+  herşey: her şey
+  hiçbirşey: hiçbir şey
+  birkaç: bir kaç
+  birçok: bir çok
+  hiçbir: hiç bir
+  herhangi: her hangi
+  herhangibir: herhangi bir
+  herzaman: her zaman
+  hiçbirzaman: hiçbir zaman
+  birgün: bir gün
+  birtakım: bir takım
+  birçoğu: bir çoğu
+  hiçbirisi: hiçbiri
+  bukadar: bu kadar
+  şukadar: şu kadar
+  okadar: o kadar
+  nekadar: ne kadar
+  nasılki: nasıl ki
+  öyleki: öyle ki
+  şöyleki: şöyle ki
