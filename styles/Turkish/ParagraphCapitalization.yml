@@ -1,0 +1,6 @@
+extends: capitalization
+message: "Paragraf cümlesi büyük harfle başlamalı."
+level: error
+match: $sentence
+style: sentence
+scope: paragraph

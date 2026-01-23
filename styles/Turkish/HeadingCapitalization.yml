@@ -1,0 +1,6 @@
+extends: capitalization
+message: "Başlık büyük harfle başlamalı."
+level: error
+match: $heading
+style: sentence
+scope: heading

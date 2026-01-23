@@ -1,0 +1,6 @@
+extends: capitalization
+message: "Liste öğesi büyük harfle başlamalı."
+level: error
+match: $sentence
+style: sentence
+scope: list
