@@ -3,3 +3,8 @@ message: "Cümle büyük harfle başlamalı."
 level: error
 match: $sentence
 style: sentence
+# Başlıkları yoksay
+link: https://vale.sh/docs/topics/scopes/
+scope: text
+filters:
+  - '^#.*$'

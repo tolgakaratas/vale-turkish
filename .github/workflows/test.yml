@@ -32,8 +32,8 @@ jobs:
         echo "MinAlertLevel = suggestion" >> .vale.ini
         echo "[*.md]" >> .vale.ini
         echo "BasedOnStyles = Turkish" >> .vale.ini
-        # Disable spelling for CI to avoid hunspell dependency issues if any
-        # echo "Turkish.Spelling = NO" >> .vale.ini
+        # Disable spelling for CI to avoid hunspell dependency issues
+        echo "Turkish.Spelling = NO" >> .vale.ini
 
     - name: Run Vale on Clean File (Should Pass)
       run: vale fixtures/clean.md
