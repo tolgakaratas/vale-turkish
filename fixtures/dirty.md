@@ -44,3 +44,10 @@ Burada hiç bir kurala uyulmamışdır. herşey karmakarışık ve düzensiz.
 ## Uzun Cümle Hatası
 
 Bu cümle o kadar uzun ki okuyan kişinin nefesi kesilecek ve cümlenin sonuna geldiğinde başını unutmuş olacak çünkü gereksiz yere uzatılmış ve bir türlü bitmek bilmeyen ifadelerle dolu olduğu için okuyucuyu yoracak ve dikkatinin dağılmasına sebep olacak bir yapıya sahip.
+
+## Deyim Hataları
+
+31. Göz var nizam var kardeşim.
+32. Berberden çıktın, saatler olsun.
+33. Eşek hoşaftan ne anlar ki?
+34. Kısa kes aydın havası olsun.

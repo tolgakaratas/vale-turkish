@@ -1,0 +1,19 @@
+# Deyimler ve Galat-ı Meşhurlar
+# Yanlış bilinen veya yanlış kullanılan deyimlerin düzeltilmesi.
+
+extends: substitution
+# Parametre sırası: 1. Öneri (Doğru), 2. Eşleşen (Yanlış)
+message: "🍯 Deyimin doğrusunu kullanalım: '%s' ('%s' yerine)"
+level: suggestion
+ignorecase: true
+swap:
+  göz var nizam var: göz var izan var
+  su küçüğün söz büyüğün: su küçüğün sofra büyüğün
+  eşek hoşaftan ne anlar: eşek hoş laftan ne anlar
+  kısa kes aydın havası olsun: kısa kes aydın abası olsun
+  ateş olsa cürmü kadar yer yakar: ateş olsa cirmi kadar yer yakar
+  güzele bakmak sevaptır: güzel bakmak sevaptır
+  aptala malum olur: abdala malum olur
+  altı kaval üstü şişhane: altı kaval üstü şeşhane
+  saatler olsun: sıhhatler olsun
+  başın sağolsun: başınız sağ olsun
