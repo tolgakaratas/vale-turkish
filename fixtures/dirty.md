@@ -33,3 +33,14 @@ Burada hiç bir kurala uyulmamışdır. herşey karmakarışık ve düzensiz.
 24. Dosya ekte bulunmaktadır.
 25. Tarafımızdan yapılan inceleme neticesinde.
 26. Konuyla ilgili talep etmek istediğiniz bir şey var mı?
+
+## Teknik Terim Hataları
+
+27. Gcp üzerinde K8s kümesi kurduk.
+28. Nextjs projesi ayağa kalkmıyor.
+29. Vscode ile kod yazıyorum.
+30. Macos güncellemesi geldi.
+
+## Uzun Cümle Hatası
+
+Bu cümle o kadar uzun ki okuyan kişinin nefesi kesilecek ve cümlenin sonuna geldiğinde başını unutmuş olacak çünkü gereksiz yere uzatılmış ve bir türlü bitmek bilmeyen ifadelerle dolu olduğu için okuyucuyu yoracak ve dikkatinin dağılmasına sebep olacak bir yapıya sahip.

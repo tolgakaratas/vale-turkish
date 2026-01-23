@@ -1,0 +1,11 @@
+# Uzun Cümle Kontrolü
+# 30 kelimeden uzun cümleler için uyarı verir.
+# Okunabilirliği artırmak için cümleleri bölmeyi önerir.
+
+extends: existence
+message: "Bu cümle çok uzun (%s+ kelime). Okunabilirliği artırmak için bölmeyi düşünün."
+level: warning
+scope: sentence
+tokens:
+  # 30 kelime ve üzeri (boşluk sayısına göre basit tespit)
+  - '(?:\S+\s+){30,}\S+'

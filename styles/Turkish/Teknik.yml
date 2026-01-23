@@ -2,28 +2,168 @@
 # Yazılım dünyasındaki terimlerin doğru yazılışları
 
 extends: substitution
-message: "Teknik terim yazımı hatalı: '%s' yerine '%s' kullanın"
+# Parametre sırası: 1. Öneri (Doğru), 2. Eşleşen (Yanlış)
+message: "'%s' kullanın ('%s' yerine)"
 level: error
 ignorecase: false
 swap:
+  # Git & Sürüm Kontrol
   Github: GitHub
   Gitlab: GitLab
+  Bitbucket: Bitbucket
+  
+  # Diller & Runtime
   Javascript: JavaScript
   Typescript: TypeScript
   Nodejs: Node.js
   NodeJS: Node.js
+  Php: PHP
+  Golang: Go
+  Python: Python
+  Rust: Rust
+  Java: Java
+  
+  # Frontend
   Reactjs: React
   ReactJS: React
   Vuejs: Vue.js
   VueJS: Vue.js
   Angularjs: Angular
   AngularJS: Angular
+  Nextjs: Next.js
+  NextJS: Next.js
+  Nuxtjs: Nuxt.js
+  Svelte: Svelte
+  Tailwind: Tailwind CSS
+  Bootstrap: Bootstrap
+  Jquery: jQuery
+  Html: HTML
+  Css: CSS
+  Sass: Sass
+  Less: Less
+  
+  # Backend & Veritabanı
   Wordpress: WordPress
-  Vscode: VS Code
-  VsCode: VS Code
-  VSC: VS Code
+  Mysql: MySQL
+  Postgresql: PostgreSQL
+  PostgreSql: PostgreSQL
+  Sqlite: SQLite
+  Mongodb: MongoDB
+  MongoDb: MongoDB
+  Redis: Redis
+  Elasticsearch: Elasticsearch
+  Graphql: GraphQL
+  
+  # DevOps & Cloud - AWS
+  Aws: AWS
+  Ec2: EC2
+  S3: S3
+  Lambda: Lambda
+  Dynamodb: DynamoDB
+  Rds: RDS
+  Vpc: VPC
+  Cloudfront: CloudFront
+  Iam: IAM
+  
+  # DevOps & Cloud - Azure
+  Azure: Azure
+  Devops: DevOps
+  Cosmosdb: Cosmos DB
+  
+  # DevOps & Cloud - GCP
+  Gcp: GCP
+  Firebase: Firebase
+  Bigquery: BigQuery
+  Kubernetes: Kubernetes
+  K8s: Kubernetes
+  Docker: Docker
+  Nginx: Nginx
+  Apache: Apache
+  Ansible: Ansible
+  Terraform: Terraform
+  Jenkins: Jenkins
+  
+  # İşletim Sistemleri
   Macos: macOS
   MacOs: macOS
   Ios: iOS
   Ipad: iPad
   Iphone: iPhone
+  Windows: Windows
+  Android: Android
+  Ubuntu: Ubuntu
+  Debian: Debian
+  Centos: CentOS
+  Redhat: Red Hat
+  Linux: Linux
+  
+  # Araçlar & Editörler
+  Vscode: VS Code
+  VsCode: VS Code
+  VSC: VS Code
+  Sublime: Sublime Text
+  Intellij: IntelliJ IDEA
+  Eclipse: Eclipse
+  Vim: Vim
+  Emacs: Emacs
+  
+  # Genel Terimler
+  Api: API
+  Url: URL
+  Http: HTTP
+  Https: HTTPS
+  Json: JSON
+  Xml: XML
+  Yaml: YAML
+  Csv: CSV
+  Sdk: SDK
+  Ide: IDE
+  Gui: GUI
+  Cli: CLI
+  Vpn: VPN
+  Ssh: SSH
+  Ftp: FTP
+  Sql: SQL
+  Nosql: NoSQL
+  Rest: REST
+  Soap: SOAP
+  Oauth: OAuth
+  Jwt: JWT
+  Uuid: UUID
+  Guid: GUID
+  Ip: IP
+  Dns: DNS
+  Tcp: TCP
+  Udp: UDP
+  Ssl: SSL
+  Tls: TLS
+  Cdn: CDN
+  Vps: VPS
+  Vm: VM
+  Os: OS
+  Iot: IoT
+  Ai: AI
+  Ml: ML
+  Nlp: NLP
+  Llm: LLM
+  Gpt: GPT
+  Openai: OpenAI
+  Anthropic: Anthropic
+  Google: Google
+  Microsoft: Microsoft
+  Apple: Apple
+  Amazon: Amazon
+  Facebook: Facebook
+  Twitter: Twitter
+  Linkedin: LinkedIn
+  Youtube: YouTube
+  Instagram: Instagram
+  Tiktok: TikTok
+  Whatsapp: WhatsApp
+  Telegram: Telegram
+  Slack: Slack
+  Discord: Discord
+  Zoom: Zoom
+  Skype: Skype
+  Spotify: Spotify
+  Netflix: Netflix
