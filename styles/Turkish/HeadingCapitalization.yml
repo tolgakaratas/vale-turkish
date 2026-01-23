@@ -1,5 +1,5 @@
 extends: existence
-message: "Başlık büyük harfle başlamalı."
+message: "📑 Başlıklar büyük harfle başlamalıdır."
 level: error
 scope: heading
 tokens:

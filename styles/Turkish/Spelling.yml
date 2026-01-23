@@ -2,7 +2,7 @@
 # Hunspell sözlüğü kullanarak Türkçe kelimeleri kontrol eder
 
 extends: spelling
-message: "'%s' kelimesi yanlış yazılmış olabilir."
+message: "📖 '%s' kelimesi sözlükte bulunamadı. Yazım hatası olabilir mi?"
 level: error
 link: https://sozluk.gov.tr/
 

@@ -1,5 +1,6 @@
 extends: substitution
-message: "Plaza Türkçesi yerine '%s' kullanın"
+# Parametre sırası: 1. Öneri (Doğru), 2. Eşleşen (Yanlış)
+message: "🏢 Plaza dili yerine öz Türkçe kullansak nasıl olur? '%s' kullanın ('%s' yerine)"
 level: warning
 ignorecase: true
 swap:

@@ -3,7 +3,7 @@
 # Okunabilirliği artırmak için cümleleri bölmeyi önerir.
 
 extends: existence
-message: "Bu cümle çok uzun (%s+ kelime). Okunabilirliği artırmak için bölmeyi düşünün."
+message: "☕️ Bu cümle biraz uzun mu olmuş ne? (%s+ kelime). Okuyucuya nefes aldırmak için bölmeyi düşünebilirsin."
 level: warning
 scope: sentence
 tokens:

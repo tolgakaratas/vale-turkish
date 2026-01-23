@@ -3,7 +3,7 @@
 
 extends: substitution
 # Parametre sırası: 1. Öneri (Doğru), 2. Eşleşen (Yanlış)
-message: "'%s' kullanın ('%s' yerine)"
+message: "✨ Daha duru ve etkileyici bir Türkçe için: '%s' kullanın ('%s' yerine)"
 level: suggestion
 ignorecase: true
 swap:

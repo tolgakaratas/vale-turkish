@@ -1,6 +1,6 @@
 extends: substitution
 # Parametre sırası: 1. Öneri (Doğru), 2. Eşleşen (Yanlış)
-message: "'%s' kullanın ('%s' yerine)"
+message: "🇹🇷 Türkçemizi koruyalım: '%s' kullanın ('%s' yerine)"
 level: error
 link: https://sozluk.gov.tr/
 ignorecase: true

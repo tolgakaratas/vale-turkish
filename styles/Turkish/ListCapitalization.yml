@@ -1,5 +1,5 @@
 extends: capitalization
-message: "Liste öğesi büyük harfle başlamalı."
+message: "📋 Liste öğeleri büyük harfle başlamalıdır."
 level: error
 match: $sentence
 style: sentence

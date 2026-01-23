@@ -1,5 +1,5 @@
 extends: existence
-message: "Noktalama işaretinden önce boşluk bırakılmaz: '%s'"
+message: "🛑 Noktalama işaretinden önce boşluk bırakılmaz: '%s'"
 level: error
 link: https://www.tdk.gov.tr/icerik/yazim-kurallari/noktalama-isaretleri/
 tokens:

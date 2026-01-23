@@ -1,5 +1,5 @@
 extends: existence
-message: "'de/da' bağlacı ayrı yazılır. '%s' ifadesini kontrol edin."
+message: "⚠️ Bağlaç olan 'de/da' ayrı yazılır: '%s' ifadesini kontrol edin."
 level: warning
 link: https://www.tdk.gov.tr/icerik/yazim-kurallari/de-da-baglaci/
 ignorecase: false

@@ -1,5 +1,6 @@
 extends: substitution
-message: "'ki' bağlacı ayrı yazılmalı: '%s' yerine '%s'"
+# Parametre sırası: 1. Öneri (Doğru), 2. Eşleşen (Yanlış)
+message: "⚠️ Bağlaç olan 'ki' ayrı yazılır: '%s' kullanın ('%s' yerine)"
 level: warning
 link: https://www.tdk.gov.tr/icerik/yazim-kurallari/ki-baglaci/
 ignorecase: true

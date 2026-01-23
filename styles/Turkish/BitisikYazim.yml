@@ -1,5 +1,6 @@
 extends: substitution
-message: "'%s' ayrı yazılmalı: '%s'"
+# Parametre sırası: 1. Öneri (Doğru), 2. Eşleşen (Yanlış)
+message: "📝 Ayrı yazılması gereken bir kelime: '%s' kullanın ('%s' yerine)"
 level: error
 link: https://www.tdk.gov.tr/icerik/yazim-kurallari/ayri-yazilan-birlesik-kelimeler/
 ignorecase: true

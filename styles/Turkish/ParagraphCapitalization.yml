@@ -1,5 +1,5 @@
 extends: capitalization
-message: "Paragraf cümlesi büyük harfle başlamalı."
+message: "📝 Cümleler büyük harfle başlamalıdır."
 level: error
 match: $sentence
 style: sentence
