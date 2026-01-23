@@ -1,18 +1,22 @@
-# PROJE BİLGİ BANKASI (KNOWLEDGE BASE)
+# PROJE BİLGİ BANKASI VE MANİFESTOSU
 
 **Oluşturulma Tarihi:** 23 Ocak 2026
+**Son Güncelleme:** 23 Ocak 2026
 **Proje:** Vale Turkish (Türkçe Stil Rehberi)
 **Konum:** Kök Dizin
 
-## GENEL BAKIŞ
-Vale Turkish, Türkçe teknik dokümantasyon, blog yazıları ve kurumsal metinler için açık kaynaklı bir Vale linter stil paketidir. Amacı, "Plaza Türkçesi", yazım hataları ve anlatım bozukluklarını otomatik olarak tespit edip düzeltmektir.
+## 🌟 PROJENİN RUHU
+Biz sadece kod yazmıyoruz; **Türkçenin dijital dünyadaki saygınlığını koruyoruz.**
+Amacımız, yazılımcıların ve içerik üreticilerinin dilimizi **doğru, duru ve estetik** bir şekilde kullanmasına yardımcı olmaktır. Bu proje, "hata bulan bir robot" değil, "yardımsever bir editör" gibi davranmalıdır.
 
-## YAPI
+**Mottomuz:** *"Yasaklama, doğrusunu göster. Robot gibi konuşma, insan gibi öner."*
+
+## 📁 YAPI
 ```text
 vale-turkish/
 ├── .github/                # CI/CD İş Akışları (Test ve Release)
 ├── fixtures/               # Test Dosyaları (Temiz ve Hatalı örnekler)
-├── gelistirme-notlari/     # Geliştiriciler için ek rehberler
+├── gelistirme-notlari/     # Geliştiriciler için ek teknik rehberler
 ├── styles/
 │   ├── Turkish/            # Ana Stil Kuralları (YAML)
 │   ├── dictionaries/       # Hunspell Sözlükleri (tr.dic, tr.aff)
@@ -20,47 +24,52 @@ vale-turkish/
 ├── library.json            # Vale Registry Kaydı
 ├── PRD.md                  # Ürün Gereksinim Dokümanı
 ├── README.md               # Kullanım Kılavuzu
+├── KATKIDA_BULUNMA.md      # Katkı Rehberi
 ├── install.sh              # macOS/Linux Kurulum Scripti
 └── install.ps1             # Windows Kurulum Scripti
 ```
 
-## NEREYE BAKILMALI
-| Görev | Konum | Notlar |
-|-------|-------|--------|
-| **Kural Ekleme/Düzenleme** | `styles/Turkish/*.yml` | Her kural ayrı bir YAML dosyasında olmalı. |
-| **Sözlük Güncelleme** | `styles/config/vocabularies/Turkish/accept.txt` | Doğru olduğu halde hata veren kelimeleri buraya ekle. |
-| **Test Senaryosu Ekleme** | `fixtures/clean.md` & `dirty.md` | Kuralların doğruluğunu test etmek için kullanılır. |
-| **CI/CD Ayarları** | `.github/workflows/*.yml` | GitHub Actions yapılandırmaları. |
-| **Kurulum Scriptleri** | `install.sh` / `install.ps1` | Kullanıcı kurulum süreçleri. |
+## 🧠 ÖĞRENİLEN DERSLER (POST-MORTEM)
+*Bu projeyi geliştiren ajanların (ve insanların) mutlaka okuması gereken teknik hafıza.*
 
-## KONVANSİYONLAR (KURALLAR)
-*   **Dil:** Tüm dokümantasyon, commit mesajları ve dosya içi yorumlar **Türkçe** olmalıdır.
-*   **Dosya İsimlendirme:** Kural dosyaları `PascalCase.yml` formatında olmalıdır (Örn: `BitisikYazim.yml`).
-*   **Kural Yapısı:** Her kural dosyasında `message`, `level` ve `link` (varsa) alanları mutlaka dolu olmalıdır.
-*   **Kapsam (Scope):** Kurallar mümkün olduğunca dar kapsamlı (`scope: sentence` veya `scope: paragraph`) tutulmalıdır.
-*   **Test Zorunluluğu:** Yeni bir kural eklendiğinde mutlaka `fixtures` dosyalarında test edilmelidir.
+### 1. Hunspell ve Türkçe Fiil Çekimleri
+*   **Sorun:** 36 MB'lık devasa Hunspell sözlüğü bile "geliyorum", "gidersin" gibi temel çekimleri tanıyamadı.
+*   **Çözüm:** `accept.txt`'ye binlerce kelime eklemek yerine, `Spelling.yml` içinde **akıllı regex filtreleri** kullandık.
+*   **Ders:** Hunspell yetersiz kaldığında, `ignore` listesine manuel ekleme yapmak yerine **desen (pattern) tabanlı çözüm** üretin.
 
-## ANTİ-DESENLER (YASAKLAR)
-*   **ASLA** bir kuralı testleri geçmek için iptal etme veya kapatma. Kuralı düzelt.
-*   **ASLA** `scope` alanını gereksiz yere genişletme (tüm dosyayı tarama).
-*   **ASLA** Hunspell sözlüğünü manuel düzenleme; kelimeleri `accept.txt`'ye ekle.
-*   **ASLA** İngilizce commit mesajı kullanma.
+### 2. Vale Mesaj Formatı (Ters Köşe)
+*   **Sorun:** `substitution` kuralında mesaj formatı `'Doğru' yerine 'Yanlış' kullanın` şeklinde ters çalıştı.
+*   **Gerçek:** Vale'nin `%s` parametreleri: 1. `Öneri` (Doğru), 2. `Eşleşen` (Yanlış).
+*   **Doğru Format:** `message: "'%s' kullanın ('%s' yerine)"`
 
-## KOMUTLAR
+### 3. Kapsam (Scope) Tuzakları
+*   **Sorun:** `capitalization` kuralı hem başlıkları hem listeleri karıştırdı.
+*   **Çözüm:** Tek bir devasa kural yerine, her kapsam için ayrı kural dosyası oluşturduk (`HeadingCapitalization.yml`, `ListCapitalization.yml`).
+*   **Ders:** Karmaşıklığı yönetmek için kuralları **böl ve yönet**.
+
+## ⚖️ KARAR ÇERÇEVESİ
+Bir ikilemde kaldığında şu sırayı takip et:
+
+1.  **Kalite:** Kuralı kapatmak YOK. Sorunu çözmek VAR.
+2.  **Kullanıcı Deneyimi:** Hata mesajı insanı azarlamamalı, gülümsetmeli (Emoji kullan).
+3.  **Performans:** Regex'ler optimize edilmeli, tüm dosyayı taramaktan kaçınılmalı.
+
+## 🛠️ KONVANSİYONLAR
+*   **Dil:** Her şey **TÜRKÇE**.
+*   **Dosya Adı:** `PascalCase.yml` (Örn: `BitisikYazim.yml`).
+*   **Mesajlar:** Emoji ile başla, nazik ol. (`📝`, `⚠️`, `💡`)
+
+## 🚫 ANTİ-DESENLER
+*   **ASLA** "testleri geçsin diye" `Turkish.Spelling = NO` yapma.
+*   **ASLA** kullanıcıya "Yanlış yaptın!" deme; "Şöyle yapsak daha iyi olur" de.
+*   **ASLA** `accept.txt` dosyasını `dirty.md` testini geçmek için kullanma. O dosya sadece `clean.md` içindir.
+
+## ⌨️ KOMUTLAR
 ```bash
-# Test Çalıştırma (Yerel)
+# Test Çalıştırma
 vale --config=.vale.ini fixtures/clean.md
 vale --config=.vale.ini fixtures/dirty.md
 
-# Kurulum Testi
-./install.sh
-
-# Versiyon Yayınlama (Otomatik)
-git tag vX.Y.Z
-git push origin vX.Y.Z
+# Release
+git tag vX.Y.Z && git push origin vX.Y.Z
 ```
-
-## NOTLAR
-*   `clean.md` dosyası her zaman **SIFIR HATA** vermelidir.
-*   `dirty.md` dosyası beklenen hataları vermelidir.
-*   Proje, Vale Package Registry standartlarına uyumlu olmalıdır (`library.json` güncel kalmalı).
