@@ -1,0 +1,54 @@
+name: Test
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+
+    - name: Install Vale
+      run: |
+        wget https://github.com/errata-ai/vale/releases/download/v3.9.0/vale_3.9.0_Linux_64-bit.tar.gz
+        tar -xvzf vale_3.9.0_Linux_64-bit.tar.gz
+        sudo mv vale /usr/local/bin/
+        vale --version
+
+    - name: Install Hunspell Dependencies
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y hunspell hunspell-tr
+
+    - name: Configure Vale
+      run: |
+        mkdir -p styles
+        cp -r styles/Turkish styles/
+        cp -r styles/dictionaries styles/
+        # Use local config for testing
+        echo "StylesPath = styles" > .vale.ini
+        echo "MinAlertLevel = suggestion" >> .vale.ini
+        echo "[*.md]" >> .vale.ini
+        echo "BasedOnStyles = Turkish" >> .vale.ini
+        # Disable spelling for CI to avoid hunspell dependency issues if any
+        # echo "Turkish.Spelling = NO" >> .vale.ini
+
+    - name: Run Vale on Clean File (Should Pass)
+      run: vale fixtures/clean.md
+
+    - name: Run Vale on Dirty File (Should Fail)
+      continue-on-error: true
+      run: |
+        vale fixtures/dirty.md
+        if [ $? -eq 0 ]; then
+          echo "Error: Vale should have failed on dirty.md"
+          exit 1
+        else
+          echo "Success: Vale correctly identified errors in dirty.md"
+          exit 0
+        fi

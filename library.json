@@ -1,0 +1,9 @@
+{
+  "name": "Turkish",
+  "description": "Turkish style guide for Vale linter. Includes spelling, grammar, plaza language and technical term checks.",
+  "homepage": "https://github.com/tolgakaratas/vale-turkish",
+  "author": "Antigravity",
+  "version": "1.0.0",
+  "url": "https://github.com/tolgakaratas/vale-turkish/releases/latest/download/Turkish.zip",
+  "feed": "https://github.com/tolgakaratas/vale-turkish/releases.atom"
+}
