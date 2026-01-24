@@ -1,0 +1,42 @@
+extends: substitution
+# 💎 GELİŞTİRME İLKESİ: Sadece ekleyerek zenginleştiriyoruz. 
+# Hatalı olanı düzeltmek dışında hiçbir veriyi silmiyoruz. 
+# Sürekli yeni geliştirmelere açığız ve bu yapıyı büyüterek zenginleştiriyoruz.
+
+# Parametre sırası: 1. Öneri (Doğru), 2. Eşleşen (Yanlış)
+message: "🏭 Fabrika ve üretim sahalarında öz Türkçe kullansak nasıl olur? '%s' kullanın ('%s' yerine)"
+level: warning
+ignorecase: true
+swap:
+  # Üretim ve Planlama Terimleri
+  shift: vardiya
+  shift listesi: vardiya listesi
+  line: hat
+  üretim line: üretim hattı
+  setup: kurulum
+  setup süresi: kurulum süresi
+  overtime: fazla mesai
+  lead time: teslim süresi
+  cycle time: çevrim süresi
+  throughput: çıktı
+  bottleneck: darboğaz
+  downtime: duruş süresi
+  kaizen: sürekli iyileştirme
+  poka-yoke: hata önleyici
+
+  # Kalite ve Operasyon
+  start vermek: başlatmak
+  stop etmek: durdurmak
+  okeylemek: onaylamak
+  approve etmek: onaylamak
+  kontrol etmek: (zaten doğru)
+  revizyon: yenileme
+  on-hold: beklemede
+  scrap: hurda
+  rework: yeniden işleme
+  batch: parti
+  lot numarası: parti numarası
+  envanter: stok
+  lojistik: nakliye
+  mavi yaka: üretim çalışanı
+  beyaz yaka: ofis çalışanı

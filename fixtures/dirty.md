@@ -56,11 +56,17 @@ Bu cümle o kadar uzun ki okuyan kişinin nefesi kesilecek ve cümlenin sonuna g
 41. KPI raporlarını brief olarak hazırlayın.
 42. Bu insight üzerine brainstorm yapalım.
 
-## Yeni Yazım ve Sadelik Hataları
+## Akademik Stil Hataları
 
-43. Bu konuda insiyatif almanız gerekiyor.
-44. Espiri anlayışı çok zayıf.
-45. Vaz geçmek bize yakışmaz.
-46. Hiçkimse buraya gelmedi.
-47. Konuyu istişare etmek faydalı olur.
-48. Müteakiben toplantı sona erdi.
+49. Yapılan araştırma neticesinde mezkur bulgusuna ulaşılmıştır.
+50. Mamafih, müteakiben yeni bir deney icra edilmektedir.
+51. Bu hasebiyle istifade etmek mümkün addetmek gerekir.
+52. Bilumum katılım sağlamak isteyenler incelemede bulunmak zorundadır.
+
+## Fabrika Jargonu Hataları
+
+53. Bu shift listesini acil okeylemek lazım.
+54. Üretim line'ında bottleneck oluştu, start veremiyoruz.
+55. Setup süresi arttığı için cycle time düştü.
+56. Scrap olan batch'ler için rework yapılacak.
+57. Mavi yaka çalışanlar overtime yaptı.

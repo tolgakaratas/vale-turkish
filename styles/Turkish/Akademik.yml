@@ -1,0 +1,41 @@
+extends: substitution
+# 💎 GELİŞTİRME İLKESİ: Sadece ekleyerek zenginleştiriyoruz. 
+# Hatalı olanı düzeltmek dışında hiçbir veriyi silmiyoruz. 
+# Sürekli yeni geliştirmelere açığız ve bu yapıyı büyüterek zenginleştiriyoruz.
+
+# Parametre sırası: 1. Öneri (Doğru), 2. Eşleşen (Yanlış)
+message: "🎓 Akademik dilde duruluk önemlidir: '%s' kullanın ('%s' yerine)"
+level: suggestion
+ignorecase: true
+swap:
+  # Arkaik / Ağır Kelimeler
+  addetmek: saymak
+  atfetmek: dayandırmak
+  binaen: dayanarak
+  bilumum: bütün
+  derpiş etmek: öngörmek
+  haiz: taşıyan
+  hasebiyle: nedeniyle
+  istifade etmek: yararlanmak
+  izale etmek: gidermek
+  mamafih: bununla birlikte
+  mezkur: anılan
+  müteakip: sonra
+  müteakiben: ardından
+  müspet: olumlu
+  menfi: olumsuz
+  namütenahi: sonsuz
+  sarfınazar: vazgeçme
+  tayin etmek: belirlemek
+  tetkik etmek: incelemek
+
+  # Gereksiz Resmiyet / Dolambaçlı Yapılar
+  altı çizilmelidir ki: belirtilmelidir
+  bulgusuna ulaşılmıştır: bulundu
+  gözlemlenmiştir: gözlemlendi
+  tespit edilmiştir: tespit edildi
+  vurgulanmalıdır ki: vurgulanmalı
+  meydana gelmektedir: oluşuyor
+  icra edilmektedir: yapılıyor
+  katılım sağlamak: katılmak
+  incelemede bulunmak: incelemek

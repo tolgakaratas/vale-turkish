@@ -21,11 +21,17 @@ Cumhuriyet döneminde yapılan atılımlar, dilimizin bilim ve sanat alanında d
 2.  Akdeniz, turkuaz sularıyla dünyanın dört bir yanından misafir ağırlar.
 3.  Ege, zeytin ağaçlarının gölgesinde huzur ve tarih sunar.
 
-## Profesyonel Türkçe
+## Profesyonel ve Sade Türkçe
 
-*   Proje için en kısa sürede harekete geçmemiz gerekiyor.
-*   Bu durum üzerinde uyumlandık mı?
-*   Toplantıyı ayarladım, herkes odaklansın.
-*   Geri bildirim bekliyorum, iletmeyi unutma.
-*   Teknik bilgi eksikliği nedeniyle son teslim tarihi kaçabilir.
-*   Kilometre taşlarına ulaşıldığında temas kurarız.
+*   Yapılan araştırma sonucunda sözü edilen bulgu bulundu.
+*   Bununla birlikte, ardından yeni bir deney yapılıyor.
+*   Bu nedenle yararlanmak mümkün sayılmalıdır.
+*   Tüm katılmak isteyenler incelemek zorundadır.
+
+## Üretim ve Saha Türkçesi
+
+*   Bu vardiya listesini acil onaylamak gerekiyor.
+*   Üretim hattında darboğaz oluştu, başlatamıyoruz.
+*   Kurulum süresi arttığı için çevrim süresi düştü.
+*   Hurda olan partiler için yeniden işleme yapılacak.
+*   Üretim çalışanları fazla mesai yaptı.

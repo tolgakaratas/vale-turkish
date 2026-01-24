@@ -51,6 +51,14 @@ Bu fazda repoyu "basit bir yazım denetleyicisi" olmaktan çıkarıp "stil rehbe
 *   VS Code ve Obsidian için eklenti/entegrasyon rehberleri.
 *   Tanıtım blog yazıları ve sosyal medya duyuruları.
 
+### Faz 5: Ekosistem Genişletme ve Otomasyon (Yeni Vizyon 🚀)
+Bu fazda projeyi bir yazılım aracından çıkarıp, Türkçenin dijital ekosistemine dönüştüreceğiz.
+*   **Sektörel Stil Paketleri:** Hukuk (Ağır terminoloji sadeleştirme), Akademik (Makale/Tez yazım standartları) ve Kamu dili için özel modüllerin eklenmesi.
+*   **`vale-turkish fix` CLI:** Bariz yazım hatalarını döküman genelinde tek komutla otomatik düzelten bir araç/script geliştirilmesi.
+*   **Eğitici Bilgi Kartları:** Kural mesajlarının TDK veya dilbilim kaynaklı açıklayıcı linklerle zenginleştirilerek projeye eğitim kimliği kazandırılması.
+*   **Web ve Tarayıcı Entegrasyonu:** Geliştirici olmayanlar için çevrimiçi metin editörü ve Chrome/Firefox eklentisi (LinkedIn, Gmail desteği) geliştirilmesi.
+*   **Kalite Rozeti (Badge):** Projelerin Türkçe hassasiyetini ödüllendiren ve README dosyalarına eklenebilen dinamik "Turkish Quality" rozetleri.
+
 ## 6. Kapsam / Kapsam Dışı
 *   **Kapsam:** Vale'nin temel kural tipleri (`substitution`, `existence`, `occurrence`, `repetition`, `capitalization`, `spelling`) kullanılarak Türkçe yazım, dilbilgisi ve stil denetimi. GitHub Actions ile otomatik test ve release süreçleri.
 *   **Kapsam Dışı:** Doğal Dil İşleme (NLP) tabanlı, ileri seviye dilbilgisi çözümlemeleri (morfolojik analiz, sentaks analizi gibi karmaşık dilbilgisi kuralları). Bu tür özellikler, Vale'nin mevcut altyapısıyla verimli bir şekilde uygulanamaz ve projenin kapsamını gereksiz yere şişirir.
