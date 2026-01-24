@@ -54,29 +54,41 @@ vale-turkish/
 *   **Çözüm:** Tek bir devasa kural yerine, her kapsam için ayrı kural dosyası oluşturduk (`HeadingCapitalization.yml`, `ListCapitalization.yml`).
 *   **Ders:** Karmaşıklığı yönetmek için kuralları **böl ve yönet**.
 
-## ⚖️ KARAR ÇERÇEVESİ
-Bir ikilemde kaldığında şu sırayı takip et:
+## ⚖️ KARAR ÇERÇEVESİ VE İŞ AKIŞI
+Bir ikilemde kaldığında veya yeni bir geliştirme yaparken şu sırayı takip et:
 
 1.  **Kalite:** Kuralı kapatmak YOK. Sorunu çözmek VAR.
 2.  **Kullanıcı Deneyimi:** Hata mesajı insanı azarlamamalı, gülümsetmeli (Emoji kullan).
 3.  **Performans:** Regex'ler optimize edilmeli, tüm dosyayı taramaktan kaçınılmalı.
 
+### 🔄 Zorunlu Geliştirme Döngüsü (Test Odaklı)
+Bu projedeki her geliştirme, şu adımları otomaitk bir refleks olarak takip etmelidir:
+1.  **Ön Kontrol:** Mevcut durumu görmek için testleri çalıştır (`vale fixtures/dirty.md`).
+2.  **Zenginleştirme:** [💎 Ana Geliştirme İlkesi](#-ana-gelistirme-ilkesi-kirmizi-cizgi) uyarınca yeni verileri ekle.
+3.  **Doğrulama:** Yeni eklenen kuralın çalıştığını `fixtures/dirty.md` üzerinden kanıtla.
+4.  **Sıfır Hata:** Yapılan değişikliğin yan etki yaratmadığını `fixtures/clean.md` üzerinden doğrula.
+
+> ⚠️ **KRİTİK KURAL:** Asla test etmeden kod gönderme (commit/push). Her seferinde işe başlamadan önce ve bitirdikten sonra testler mutlaka çalıştırılmalıdır.
+
 ## 🛠️ KONVANSİYONLAR
 *   **Dil:** Her şey **TÜRKÇE**.
 *   **Dosya Adı:** `PascalCase.yml` (Örn: `BitisikYazim.yml`).
 *   **Mesajlar:** Emoji ile başla, nazik ol. (`📝`, `⚠️`, `💡`)
+*   **Teknik Detaylar:** Daha fazla bilgi için [KATKIDA_BULUNMA.md](KATKIDA_BULUNMA.md) dosyasına bakın.
 
 ## 🚫 ANTİ-DESENLER
 *   **ASLA** "testleri geçsin diye" `Turkish.Spelling = NO` yapma.
 *   **ASLA** kullanıcıya "Yanlış yaptın!" deme; "Şöyle yapsak daha iyi olur" de.
 *   **ASLA** `accept.txt` dosyasını `dirty.md` testini geçmek için kullanma. O dosya sadece `clean.md` içindir.
+*   **ASLA** "test etmeden göndermek" gibi bir hataya düşme.
 
 ## ⌨️ KOMUTLAR
+Aşağıdaki komutlar geliştirme döngüsünün ayrılmaz bir parçasıdır:
 ```bash
-# Test Çalıştırma
+# İş akışı başlangıcı ve sonu için test çalıştırma
 vale --config=.vale.ini fixtures/clean.md
 vale --config=.vale.ini fixtures/dirty.md
 
-# Release
+# Yeni sürüm yayınlama
 git tag vX.Y.Z && git push origin vX.Y.Z
 ```
