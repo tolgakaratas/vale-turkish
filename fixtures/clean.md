@@ -21,6 +21,11 @@ Cumhuriyet döneminde yapılan atılımlar, dilimizin bilim ve sanat alanında d
 2.  Akdeniz, turkuaz sularıyla dünyanın dört bir yanından misafir ağırlar.
 3.  Ege, zeytin ağaçlarının gölgesinde huzur ve tarih sunar.
 
-> "Bir ulus, sımsıkı birbirine bağlı olmayı bildikçe yeryüzünde onu dağıtabilecek bir güç düşünülemez." - Mustafa Kemal Atatürk
+## Profesyonel Türkçe
 
-Yazılım dünyasında da dilimize sahip çıkmak, gelecek nesillere bırakacağımız en değerli mirastır. GitHub üzerinden paylaştığımız bu projeler, küresel bilgi birikimine Türk mühendislerinin katkısını gösterir.
+*   Proje için en kısa sürede harekete geçmemiz gerekiyor.
+*   Bu durum üzerinde uyumlandık mı?
+*   Toplantıyı ayarladım, herkes odaklansın.
+*   Geri bildirim bekliyorum, iletmeyi unutma.
+*   Teknik bilgi eksikliği nedeniyle son teslim tarihi kaçabilir.
+*   Kilometre taşlarına ulaşıldığında temas kurarız.

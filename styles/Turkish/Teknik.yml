@@ -10,7 +10,6 @@ swap:
   # Git & Sürüm Kontrol
   Github: GitHub
   Gitlab: GitLab
-  Bitbucket: Bitbucket
   
   # Diller & Runtime
   Javascript: JavaScript
@@ -19,9 +18,6 @@ swap:
   NodeJS: Node.js
   Php: PHP
   Golang: Go
-  Python: Python
-  Rust: Rust
-  Java: Java
   
   # Frontend
   Reactjs: React
@@ -33,14 +29,10 @@ swap:
   Nextjs: Next.js
   NextJS: Next.js
   Nuxtjs: Nuxt.js
-  Svelte: Svelte
   Tailwind: Tailwind CSS
-  Bootstrap: Bootstrap
   Jquery: jQuery
   Html: HTML
   Css: CSS
-  Sass: Sass
-  Less: Less
   
   # Backend & Veritabanı
   Wordpress: WordPress
@@ -50,38 +42,26 @@ swap:
   Sqlite: SQLite
   Mongodb: MongoDB
   MongoDb: MongoDB
-  Redis: Redis
-  Elasticsearch: Elasticsearch
   Graphql: GraphQL
   
   # DevOps & Cloud - AWS
   Aws: AWS
   Ec2: EC2
-  S3: S3
-  Lambda: Lambda
   Dynamodb: DynamoDB
   Rds: RDS
   Vpc: VPC
   Cloudfront: CloudFront
   Iam: IAM
   
-  # DevOps & Cloud - Azure
-  Azure: Azure
+  # DevOps & Cloud
+  
   Devops: DevOps
   Cosmosdb: Cosmos DB
   
   # DevOps & Cloud - GCP
   Gcp: GCP
-  Firebase: Firebase
   Bigquery: BigQuery
-  Kubernetes: Kubernetes
   K8s: Kubernetes
-  Docker: Docker
-  Nginx: Nginx
-  Apache: Apache
-  Ansible: Ansible
-  Terraform: Terraform
-  Jenkins: Jenkins
   
   # İşletim Sistemleri
   Macos: macOS
@@ -89,23 +69,14 @@ swap:
   Ios: iOS
   Ipad: iPad
   Iphone: iPhone
-  Windows: Windows
-  Android: Android
-  Ubuntu: Ubuntu
-  Debian: Debian
   Centos: CentOS
   Redhat: Red Hat
-  Linux: Linux
-  
+
   # Araçlar & Editörler
   Vscode: VS Code
   VsCode: VS Code
   VSC: VS Code
-  Sublime: Sublime Text
   Intellij: IntelliJ IDEA
-  Eclipse: Eclipse
-  Vim: Vim
-  Emacs: Emacs
   
   # Genel Terimler
   Api: API
@@ -148,22 +119,7 @@ swap:
   Llm: LLM
   Gpt: GPT
   Openai: OpenAI
-  Anthropic: Anthropic
-  Google: Google
-  Microsoft: Microsoft
-  Apple: Apple
-  Amazon: Amazon
-  Facebook: Facebook
-  Twitter: Twitter
   Linkedin: LinkedIn
   Youtube: YouTube
-  Instagram: Instagram
   Tiktok: TikTok
   Whatsapp: WhatsApp
-  Telegram: Telegram
-  Slack: Slack
-  Discord: Discord
-  Zoom: Zoom
-  Skype: Skype
-  Spotify: Spotify
-  Netflix: Netflix
