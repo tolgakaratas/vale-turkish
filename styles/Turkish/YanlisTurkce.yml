@@ -6,6 +6,11 @@ link: https://sozluk.gov.tr/
 ignorecase: true
 swap:
   yanlız: yalnız
+  yalnış: yanlış
+  süpriz: sürpriz
+  şarz: şarj
+  espiri: espri
+  insiyatif: inisiyatif
   herzaman: her zaman
   bişey: bir şey
   bişi: bir şey
@@ -23,6 +28,7 @@ swap:
   yapıcam: yapacağım
   edicek: edecek
   diğil: değil
+  deyil: değil
   yokki: yok ki
   varki: var ki
   eger: eğer

@@ -30,6 +30,16 @@ Eskiden yazdığınız bir metni birine kontrol ettirmek için beklerdiniz veya 
 
 [![Videoyu İzle](https://img.youtube.com/vi/MiZyT_zUmm0/maxresdefault.jpg)](https://www.youtube.com/watch?v=MiZyT_zUmm0)
 
+## 📜 En Önemli Kuralımız: Sürekli Gelişim ve Zenginleşme
+
+Bu projenin temel felsefesi **ekleyerek zenginleştirmektir.** Bizim için en önemli kural şudur:
+
+*   **Silmiyoruz, Ekliyoruz:** Hatalı olanları düzeltmek dışında, mevcut hiçbir kuralı veya kelimeyi silmiyoruz ve silmeyeceğiz. Detaylı bilgi için [Geliştirici Rehberi (KATKIDA_BULUNMA.md)](KATKIDA_BULUNMA.md) ve [Proje Manifestosu (AGENTS.md)](AGENTS.md) dosyalarına göz atabilirsiniz.
+*   **Sürekli Gelişim:** Her zaman yeni geliştirmelere, yeni kelimelere ve yeni kurallara açığız.
+*   **Zenginleşen Yapı:** Amacımız, mevcut yapıyı her gün biraz daha büyüterek Türkçenin dijital dünyadaki en kapsamlı rehberini oluşturmaktır.
+
+Siz de bu vizyona katkıda bulunabilir, bildiğiniz yeni terimleri veya kuralları çekinmeden ekleyebilirsiniz!
+
 ## Neden Vale Turkish?
 
 *   **😖 Acı:** Toplantı "set etmekten", dökümanı "forwardlamaktan", yazım hatalarını gözden kaçırmaktan yorulmadınız mı?

@@ -11,6 +11,13 @@ Amacımız, yazılımcıların ve içerik üreticilerinin dilimizi **doğru, dur
 
 **Mottomuz:** *"Yasaklama, doğrusunu göster. Robot gibi konuşma, insan gibi öner."*
 
+### 💎 Ana Geliştirme İlkesi (KIRMIZI ÇİZGİ)
+Bu projenin en önemli kuralı şudur: **Sadece ekleyerek zenginleştiriyoruz.**
+1.  Hatalı olan bir kuralı düzeltmek dışında **hiçbir veriyi silmiyoruz.**
+2.  Mevcut yapıyı budamak yerine, yeni kurallar ve kelimeler ekleyerek sürekli büyüyoruz.
+3.  Proje her zaman yeni geliştirmelere açıktır; amaç her gün daha kapsamlı bir bilgi bankası oluşturmaktır.
+4.  Geliştiricilerin bu kurala uyması zorunludur. Detaylar için: [KATKIDA_BULUNMA.md](KATKIDA_BULUNMA.md)
+
 ## 📁 YAPI
 ```text
 vale-turkish/

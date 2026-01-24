@@ -26,6 +26,7 @@ Projenin kalbine dokunmak isterseniz:
 
 ## Altın Kurallarımız 🌟
 
+0.  **💎 ANA GELİŞTİRME İLKESİ:** Bu projenin en önemli kuralı **ekleyerek zenginleştirmektir.** Hatalı olan bir kuralı düzeltmek dışında **hiçbir veriyi silmiyoruz.** Mevcut yapıyı budamak yerine, yeni kurallar ve kelimeler ekleyerek sürekli büyüyoruz. Daha fazla detay için [Proje Manifestosu (AGENTS.md)](AGENTS.md) dosyasını inceleyebilirsiniz.
 1.  **Tam Türkçe:** Projedeki her şey (dosya isimleri, açıklamalar, commit mesajları) Türkçe olmalıdır. Yabancı terimler yerine Türkçe karşılıklarını kullanmaya özen gösteriyoruz.
 2.  **Kapsayıcılık:** Dilimiz herkesi kucaklamalı. Kaba, ayrıştırıcı veya saldırgan ifadelerden kaçınıyoruz.
 3.  **Kalite:** "Testleri geçsin diye kuralı kapatmak" yok. Sorunu kökten çözüyoruz.

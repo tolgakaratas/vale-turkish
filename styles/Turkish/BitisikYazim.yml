@@ -1,28 +1,32 @@
 extends: substitution
 # Parametre sırası: 1. Öneri (Doğru), 2. Eşleşen (Yanlış)
-message: "📝 Ayrı yazılması gereken bir kelime: '%s' kullanın ('%s' yerine)"
+message: "📝 Yazım kuralını kontrol edin: '%s' kullanın ('%s' yerine)"
 level: error
-link: https://www.tdk.gov.tr/icerik/yazim-kurallari/ayri-yazilan-birlesik-kelimeler/
+link: https://www.tdk.gov.tr/icerik/yazim-kurallari/
 ignorecase: true
 swap:
+  # Ayrı yazılması gerekenler
   birşey: bir şey
   herşey: her şey
   hiçbirşey: hiçbir şey
-  birkaç: bir kaç
-  birçok: bir çok
-  hiçbir: hiç bir
-  herhangi: her hangi
-  herhangibir: herhangi bir
   herzaman: her zaman
-  hiçbirzaman: hiçbir zaman
   birgün: bir gün
-  birtakım: bir takım
-  birçoğu: bir çoğu
-  hiçbirisi: hiçbiri
+  hiçbirzaman: hiçbir zaman
+  okadar: o kadar
   bukadar: bu kadar
   şukadar: şu kadar
-  okadar: o kadar
   nekadar: ne kadar
-  nasılki: nasıl ki
-  öyleki: öyle ki
-  şöyleki: şöyle ki
+  hiçkimse: hiç kimse
+  herhangibir: herhangi bir
+
+  # Bitişik yazılması gerekenler
+  bir kaç: birkaç
+  bir çok: birçok
+  hiç bir: hiçbir
+  her hangi: herhangi
+  bir takım: birtakım
+  vaz geçmek: vazgeçmek
+  nasıl ki: nasılki
+  öyle ki: öyleki
+  şöyle ki: şöyleki
+

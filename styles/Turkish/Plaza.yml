@@ -1,60 +1,300 @@
 extends: substitution
+# 💎 GELİŞTİRME İLKESİ: Sadece ekleyerek zenginleştiriyoruz. 
+# Hatalı olanı düzeltmek dışında hiçbir veriyi silmiyoruz. 
+# Sürekli yeni geliştirmelere açığız ve bu yapıyı büyüterek zenginleştiriyoruz.
+
 # Parametre sırası: 1. Öneri (Doğru), 2. Eşleşen (Yanlış)
 message: "🏢 Plaza dili yerine öz Türkçe kullansak nasıl olur? '%s' kullanın ('%s' yerine)"
 level: warning
 ignorecase: true
 swap:
-  # Fiiller ve Birleşik Yapılar
-  aksiyon almak: harekete geçmek
+  # --- Yeni Eklenen Efsane Plaza Terimleri ---
   align olmak: uyumlanmak
   align: uyumlanmak
-  assign etmek: atamak
-  brainstorm etmek: beyin fırtınası yapmak
-  brainstorming yapmak: beyin fırtınası yapmak
-  cancel etmek: iptal etmek
-  case: durum
-  check etmek: kontrol etmek
-  clear etmek: temizlemek
-  clicklemek: tıklamak
-  confirm etmek: onaylamak
-  confirmleşmek: onaylaşmak
-  deploy etmek: yayına almak
-  done olmak: tamamlamak
-  download etmek: indirmek
-  feedback vermek: geri bildirimde bulunmak
-  fixlemek: düzeltmek
-  focuslanmak: odaklanmak
-  focus: odak
-  forward etmek: iletmek
-  forwardlamak: iletmek
-  handle etmek: halletmek
-  ignore etmek: görmezden gelmek
-  onboard etmek: dahil etmek
-  onboard olmak: alışmak
-  over-engineer etmek: aşırı tasarlamak
-  pushlamak: göndermek
-  revert etmek: geri almak
-  set etmek: ayarlamak
-  toplantı set etmek: toplantı ayarlamak
+  aksiyon almak: harekete geçmek
+  brief: özet bilgi
+  brainstorm: beyin fırtınası yapmak
+  insight: içgörü
+  kpi: performans göstergesi
   touchbase olmak: temas kurmak
   touchbase: temas kurmak
-  update etmek: güncellemek
-  upload etmek: yüklemek
-  verify etmek: doğrulamak
-
-  # İsimler ve Kavramlar
-  asap: en kısa sürede
-  backlog: iş listesi
-  best practice: en iyi uygulama
-  brainstorming: beyin fırtınası
-  deadline: son teslim tarihi
-  feedback: geri bildirim
   know-how: teknik bilgi
-  meeting: toplantı
-  milestone: kilometre taşı
-  off-site: dışarıda
-  off-the-record: kayıt dışı
-  on-site: yerinde
-  roadmap: yol haritası
-  use case: kullanım durumu
+  asap: en kısa sürede
+  onboard etmek: dahil etmek
+  onboard olmak: alışmak
+  focuslanmak: odaklanmak
+  focus: odak
+  done olmak: tamamlamak
+  over-engineer etmek: aşırı tasarlamak
 
+  # --- Mevcut Kapsamlı Liste ---
+  deploy etmek: yayına almak
+  pushlamak: göndermek
+  pull etmek: çekmek
+  merge etmek: birleştirmek
+  commit etmek: işlemek
+  assign etmek: atamak
+  forwardlamak: iletmek
+  forward etmek: iletmek
+  feedback: geri bildirim
+  brainstorming: beyin fırtınası
+  meeting: toplantı
+  toplantı set etmek: toplantı ayarlamak
+  set etmek: ayarlamak
+  check etmek: kontrol etmek
+  confirm etmek: onaylamak
+  approve etmek: onaylamak
+  reject etmek: reddetmek
+  cancel etmek: iptal etmek
+  delete etmek: silmek
+  update etmek: güncellemek
+  edit etmek: düzenlemek
+  save etmek: kaydetmek
+  print etmek: yazdırmak
+  login olmak: giriş yapmak
+  logout olmak: çıkış yapmak
+  register olmak: kayıt olmak
+  signup olmak: kayıt olmak
+  signin olmak: giriş yapmak
+  signout olmak: çıkış yapmak
+  clicklemek: tıklamak
+  klicklemek: tıklamak
+  linklemek: bağlantı vermek
+  download etmek: indirmek
+  upload etmek: yüklemek
+  install etmek: kurmak
+  uninstall etmek: kaldırmak
+  start etmek: başlatmak
+  stop etmek: durdurmak
+  restart etmek: yeniden başlatmak
+  pause etmek: duraklatmak
+  resume etmek: devam ettirmek
+  run etmek: çalıştırmak
+  execute etmek: çalıştırmak
+  build etmek: derlemek
+  compile etmek: derlemek
+  debug etmek: hata ayıklamak
+  fixlemek: düzeltmek
+  patchlemek: yamamak
+  test etmek: test etmek
+  verify etmek: doğrulamak
+  validate etmek: doğrulamak
+  analyze etmek: analiz etmek
+  design etmek: tasarlamak
+  develop etmek: geliştirmek
+  support etmek: desteklemek
+  report etmek: raporlamak
+  export etmek: dışa aktarmak
+  import etmek: içe aktarmak
+  backup almak: yedeklemek
+  restore etmek: geri yüklemek
+  format atmak: biçimlendirmek
+  resetlemek: sıfırlamak
+  clear etmek: temizlemek
+  clean etmek: temizlemek
+  copyalamak: kopyalamak
+  pastalamak: yapıştırmak
+  cut etmek: kesmek
+  select etmek: seçmek
+  drag etmek: sürüklemek
+  drop etmek: bırakmak
+  scroll etmek: kaydırmak
+  zoom yapmak: yakınlaştırmak
+  search etmek: aramak
+  find etmek: bulmak
+  replace etmek: değiştirmek
+  sort etmek: sıralamak
+  filter etmek: filtrelemek
+  group etmek: gruplamak
+  join etmek: katılmak
+  leave etmek: ayrılmak
+  share etmek: paylaşmak
+  like etmek: beğenmek
+  comment atmak: yorum yapmak
+  follow etmek: takip etmek
+  subscribe olmak: abone olmak
+  notification: bildirim
+  deadline: son teslim tarihi
+  best practice: en iyi uygulama
+  use case: kullanım durumu
+  roadmap: yol haritası
+  milestone: kilometre taşı
+  feature: özellik
+  bug: hata
+  issue: sorun
+  task: görev
+  sprint: sprint
+  backlog: iş listesi
+  release: sürüm
+  version: versiyon
+  deployment: yayına alma
+  production: canlı ortam
+  staging: test ortamı
+  development: geliştirme ortamı
+  environment: ortam
+  server: sunucu
+  client: istemci
+  database: veritabanı
+  network: ağ
+  security: güvenlik
+  performance: performans
+  optimization: optimizasyon
+  scalability: ölçeklenebilirlik
+  reliability: güvenilirlik
+  availability: erişilebilirlik
+  usability: kullanılabilirlik
+  accessibility: erişilebilirlik
+  compatibility: uyumluluk
+  maintenance: bakım
+  documentation: dokümantasyon
+  requirement: gereksinim
+  specification: teknik özellik
+  architecture: mimari
+  infrastructure: altyapı
+  platform: platform
+  framework: çatı
+  library: kütüphane
+  package: paket
+  module: modül
+  component: bileşen
+  interface: arayüz
+  service: servis
+  application: uygulama
+  software: yazılım
+  hardware: donanım
+  system: sistem
+  user: kullanıcı
+  admin: yönetici
+  customer: müşteri
+  team: takım
+  manager: yönetici
+  developer: geliştirici
+  designer: tasarımcı
+  tester: test uzmanı
+  analyst: analist
+  consultant: danışman
+  freelancer: serbest çalışan
+  remote: uzaktan
+  office: ofis
+  hybrid: hibrit
+  full-time: tam zamanlı
+  part-time: yarı zamanlı
+  contract: sözleşmeli
+  intern: stajyer
+  salary: maaş
+  bonus: prim
+  benefit: yan hak
+  promotion: terfi
+  resignation: istifa
+  interview: mülakat
+  offer: teklif
+  hiring: işe alım
+  recruitment: işe alım
+  onboarding: işe alıştırma
+  training: eğitim
+  workshop: çalıştay
+  conference: konferans
+  seminar: seminer
+  webinar: web semineri
+  meetup: buluşma
+  event: etkinlik
+  community: topluluk
+  sponsor: sponsor
+  partner: ortak
+  vendor: tedarikçi
+  supplier: tedarikçi
+  competitor: rakip
+  market: pazar
+  industry: endüstri
+  sector: sektör
+  business: iş
+  company: şirket
+  startup: girişim
+  corporation: kurumsal şirket
+  enterprise: büyük ölçekli şirket
+  agency: ajans
+  studio: stüdyo
+  lab: laboratuvar
+  center: merkez
+  hub: merkez
+  branch: şube
+  headquarters: genel merkez
+  location: konum
+  address: adres
+  phone: telefon
+  email: e-posta
+  website: web sitesi
+  social media: sosyal medya
+  blog: blog
+  vlog: vlog
+  podcast: podcast
+  newsletter: bülten
+  presentation: sunum
+  slide: slayt
+  chart: grafik
+  graph: grafik
+  table: tablo
+  image: resim
+  video: video
+  audio: ses
+  file: dosya
+  folder: klasör
+  document: belge
+  report: rapor
+  memo: not
+  note: not
+  message: mesaj
+  chat: sohbet
+  call: arama
+  meeting room: toplantı odası
+  board room: yönetim kurulu odası
+  break room: mola odası
+  kitchen: mutfak
+  cafeteria: kafeterya
+  reception: resepsiyon
+  lobby: lobi
+  elevator: asansör
+  stairs: merdiven
+  parking: otopark
+  security guard: güvenlik görevlisi
+  cleaner: temizlikçi
+  janitor: kapıcı
+  receptionist: resepsiyonist
+  assistant: asistan
+  secretary: sekreter
+  clerk: memur
+  staff: personel
+  employee: çalışan
+  worker: işçi
+  colleague: iş arkadaşı
+  boss: patron
+  leader: lider
+  mentor: mentor
+  coach: koç
+  trainer: eğitmen
+  speaker: konuşmacı
+  host: ev sahibi
+  guest: konuk
+  visitor: ziyaretçi
+  attendee: katılımcı
+  member: üye
+  subscriber: abone
+  follower: takipçi
+  fan: hayran
+  critic: eleştirmen
+  reviewer: inceleyen
+  editor: editör
+  publisher: yayıncı
+  author: yazar
+  creator: yaratıcı
+  maker: yapıcı
+  founder: kurucu
+  owner: sahip
+  investor: yatırımcı
+  shareholder: hissedar
+  stakeholder: paydaş
+  board member: yönetim kurulu üyesi
+  executive: yönetici
+  director: direktör
+  vp: başkan yardımcısı
+  president: başkan

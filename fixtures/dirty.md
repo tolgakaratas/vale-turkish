@@ -53,3 +53,14 @@ Bu cümle o kadar uzun ki okuyan kişinin nefesi kesilecek ve cümlenin sonuna g
 38. Feedback bekliyorum, forwardlamayı unutma.
 39. Know-how eksikliği nedeniyle deadline kaçabilir.
 40. Milestone'lara ulaşıldığında touchbase oluruz.
+41. KPI raporlarını brief olarak hazırlayın.
+42. Bu insight üzerine brainstorm yapalım.
+
+## Yeni Yazım ve Sadelik Hataları
+
+43. Bu konuda insiyatif almanız gerekiyor.
+44. Espiri anlayışı çok zayıf.
+45. Vaz geçmek bize yakışmaz.
+46. Hiçkimse buraya gelmedi.
+47. Konuyu istişare etmek faydalı olur.
+48. Müteakiben toplantı sona erdi.
