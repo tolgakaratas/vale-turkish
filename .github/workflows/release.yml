@@ -6,23 +6,64 @@ on:
       - 'v*'
 
 jobs:
-  release:
-    runs-on: ubuntu-latest
-    
-    steps:
-    - uses: actions/checkout@v3
+  # Testleri çalıştır — geçmezse release yapılmaz
+  test:
+    uses: ./.github/workflows/test.yml
 
-    - name: Create Package
+  release:
+    needs: test
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Sürüm bilgisini al
+      id: version
+      run: |
+        TAG="${GITHUB_REF#refs/tags/}"
+        VERSION="${TAG#v}"
+        MAJOR="${VERSION%%.*}"
+        echo "tag=$TAG" >> "$GITHUB_OUTPUT"
+        echo "version=$VERSION" >> "$GITHUB_OUTPUT"
+        echo "major=$MAJOR" >> "$GITHUB_OUTPUT"
+
+    - name: Turkish.zip paketini oluştur
       run: |
         cd styles
-        zip -r Turkish.zip Turkish
-        mv Turkish.zip ../
+        zip -r ../Turkish.zip Turkish dictionaries config
+        cd ..
 
-    - name: Create Release
-      uses: softprops/action-gh-release@v1
+    - name: CHANGELOG'dan release notlarını çıkar
+      id: changelog
+      run: |
+        # CHANGELOG.md'den ilgili sürümün notlarını çıkar
+        VERSION="${{ steps.version.outputs.version }}"
+        NOTES=$(awk "/^## v${VERSION}/,/^## v[0-9]/" CHANGELOG.md | head -n -1)
+        if [ -z "$NOTES" ]; then
+          NOTES="## ${TAG} sürümü yayınlandı."
+        fi
+        # Multiline output için delimiter kullan
+        echo "notes<<CHANGELOG_EOF" >> "$GITHUB_OUTPUT"
+        echo "$NOTES" >> "$GITHUB_OUTPUT"
+        echo "CHANGELOG_EOF" >> "$GITHUB_OUTPUT"
+
+    - name: GitHub Release oluştur
+      uses: softprops/action-gh-release@v2
       with:
+        body: ${{ steps.changelog.outputs.notes }}
         files: |
           Turkish.zip
           library.json
+        make_latest: true
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+    - name: Floating major tag güncelle (v1 → v1.x.x)
+      run: |
+        MAJOR="v${{ steps.version.outputs.major }}"
+        git tag -fa "$MAJOR" -m "Güncelleme: $MAJOR → ${{ steps.version.outputs.tag }}"
+        git push origin "$MAJOR" --force
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

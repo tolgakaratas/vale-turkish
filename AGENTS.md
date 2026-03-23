@@ -76,6 +76,16 @@ Bu projedeki her geliştirme, şu adımları otomaitk bir refleks olarak takip e
 *   **Mesajlar:** Emoji ile başla, nazik ol. (`📝`, `⚠️`, `💡`)
 *   **Teknik Detaylar:** Daha fazla bilgi için [KATKIDA_BULUNMA.md](KATKIDA_BULUNMA.md) dosyasına bakın.
 
+### 🚦 Yayınlama Kapısı (Release Gate)
+Testlerden geçmeyen hiçbir değişiklik asla yayınlanamaz. Bu kural istisnasızdır.
+
+1.  **CI zorunluluğu:** `test`, `test-precommit` ve `test-action` job'larının üçü de yeşil olmadan release workflow tetiklenmez.
+2.  **Tag kuralı:** Release tag'i (`vX.Y.Z`) ancak main branch'te tüm testler geçtikten sonra oluşturulabilir.
+3.  **Manuel release yasağı:** Release sürecini CI dışında manuel yürütmek yasaktır. Tüm release'ler GitHub Actions üzerinden otomatik yapılır.
+4.  **Floating tag'ler:** Her release'de `v1` (major) floating tag'i güncel release'e taşınır.
+
+> ⛔ **KESİN KURAL:** Testlerden geçmeyen hiçbir şey release edilemez. Bu kural hiçbir koşulda esnetilemez.
+
 ## 🚫 ANTİ-DESENLER
 *   **ASLA** "testleri geçsin diye" `Turkish.Spelling = NO` yapma.
 *   **ASLA** kullanıcıya "Yanlış yaptın!" deme; "Şöyle yapsak daha iyi olur" de.

@@ -1,5 +1,6 @@
 name: 'Vale Turkish Linter'
-description: 'Türkçe yazım ve dilbilgisi denetimi (Vale style paketi)'
+author: 'tolgakaratas'
+description: 'Türkçe yazım ve dilbilgisi denetimi — 16 kural ile Plaza Türkçesi, bitişik yazım, teknik terimler ve daha fazlasını otomatik denetler.'
 branding:
   icon: 'check-circle'
   color: 'red'
