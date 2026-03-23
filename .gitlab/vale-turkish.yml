@@ -77,4 +77,31 @@
         [ -n "${SPELLING_LINE}" ] && echo "${SPELLING_LINE}"
       } > /tmp/vale-turkish.ini
 
-      vale --config=/tmp/vale-turkish.ini ${VALE_FILES}
+      # Vale'i JSON ile çalıştır ve raporları üret
+      VALE_EXIT=0
+      vale --config=/tmp/vale-turkish.ini --output=JSON ${VALE_FILES} > /tmp/vale-results.json 2>&1 || VALE_EXIT=$?
+
+      # Sonuçları göster (insan okunur)
+      vale --config=/tmp/vale-turkish.ini ${VALE_FILES} || true
+
+      # JUnit XML raporu (GitLab Tests sekmesi)
+      if command -v jq >/dev/null 2>&1 && [ -s /tmp/vale-results.json ]; then
+        SCRIPT_DIR="$(pwd)/vale-turkish-${VALE_TURKISH_VERSION#v}/scripts"
+        if [ -f "${SCRIPT_DIR}/vale-to-junit.sh" ]; then
+          bash "${SCRIPT_DIR}/vale-to-junit.sh" /tmp/vale-results.json > junit.xml
+        fi
+        if [ -f "${SCRIPT_DIR}/vale-to-codeclimate.sh" ]; then
+          bash "${SCRIPT_DIR}/vale-to-codeclimate.sh" /tmp/vale-results.json > gl-code-quality-report.json
+        fi
+      fi
+
+      exit $VALE_EXIT
+  artifacts:
+    when: always
+    reports:
+      junit: junit.xml
+      codequality: gl-code-quality-report.json
+    paths:
+      - junit.xml
+      - gl-code-quality-report.json
+    expire_in: 30 days

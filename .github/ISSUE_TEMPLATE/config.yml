@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Katkıda Bulunma Rehberi
+    url: https://github.com/tolgakaratas/vale-turkish/blob/main/KATKIDA_BULUNMA.md
+    about: Projeye nasıl katkıda bulunabileceğinizi öğrenin
+  - name: TDK Yazım Kılavuzu
+    url: https://www.tdk.gov.tr/icerik/yazim-kurallari/
+    about: Türk Dil Kurumu yazım kuralları referansı

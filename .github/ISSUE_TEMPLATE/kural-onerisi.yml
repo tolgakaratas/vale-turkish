@@ -1,0 +1,55 @@
+name: Yeni Kural Önerisi
+description: Yeni bir Türkçe yazım/dilbilgisi kuralı önerin
+title: "[Kural]: "
+labels: ["yeni-kural"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Yeni kural öneriniz için teşekkürler! Türkçemizi birlikte zenginleştiriyoruz.
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Kural açıklaması
+      description: Bu kural neyi denetlesin?
+      placeholder: "Örnek: 'Merhaba arkadaşlar' yerine 'Sayın ilgililer' kullanılmalı (resmi yazışmalarda)"
+    validations:
+      required: true
+
+  - type: textarea
+    id: examples
+    attributes:
+      label: Örnekler
+      description: Yanlış ve doğru kullanım örnekleri verin
+      value: |
+        **Yanlış:** ...
+        **Doğru:** ...
+    validations:
+      required: true
+
+  - type: dropdown
+    id: category
+    attributes:
+      label: Kategori
+      options:
+        - Yazım hatası (BitisikYazim, YanlisTurkce)
+        - Plaza Türkçesi (yabancı kelime)
+        - Akademik dil
+        - Teknik terim
+        - Fabrika/üretim jargonu
+        - Noktalama
+        - Diğer
+    validations:
+      required: true
+
+  - type: dropdown
+    id: severity
+    attributes:
+      label: Önerilen seviye
+      options:
+        - error (kesin hata)
+        - warning (uyarı)
+        - suggestion (öneri)
+    validations:
+      required: false

@@ -68,8 +68,11 @@ runs:
           [ -n "${SPELLING_LINE}" ] && echo "${SPELLING_LINE}"
         } > "$VALE_CONFIG"
 
-        vale --config="$VALE_CONFIG" \
-             --output="${{ inputs.reporter }}" \
-             ${{ inputs.files }}
+        # jq varsa görsel rapor üret, yoksa düz vale çalıştır
+        if command -v jq >/dev/null 2>&1; then
+          bash "${ACTION_DIR}/scripts/vale-report.sh" "$VALE_CONFIG" "${{ inputs.files }}" "${{ inputs.min_alert_level }}"
+        else
+          vale --config="$VALE_CONFIG" --output="${{ inputs.reporter }}" ${{ inputs.files }}
+        fi
 
         rm -f "$VALE_CONFIG"

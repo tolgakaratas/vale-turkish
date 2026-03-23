@@ -2,9 +2,11 @@
 
 ![Vale Turkish Banner](assets/banner.svg)
 
+[![Test](https://github.com/tolgakaratas/vale-turkish/actions/workflows/test.yml/badge.svg)](https://github.com/tolgakaratas/vale-turkish/actions/workflows/test.yml)
 [![Vale](https://img.shields.io/badge/vale-3.x-blue.svg)](https://vale.sh)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Turkish](https://img.shields.io/badge/lang-T%C3%BCrk%C3%A7e-red.svg)](README.md)
+[![GitHub Release](https://img.shields.io/github/v/release/tolgakaratas/vale-turkish)](https://github.com/tolgakaratas/vale-turkish/releases)
 
 **"Birşey" mi yazılır yoksa "bir şey" mi? "Herkez" mi "herkes" mi? Artık dert etmenize gerek yok!**
 
@@ -90,7 +92,7 @@ Tebrikler! Artık her commit'inizde Türkçe yazım denetimi otomatik çalışı
 
 ### Yol 2: Yerel Vale Kurulumu (Türkçe Dil Paketi Olarak)
 
-Vale'i bilgisayarınıza kurup, vale-turkish'i üzerine Türkçe dil paketi olarak ekleyebilirsiniz. Bu yol, pre-commit veya CI/CD kullanmadan doğrudan komut satırından çalışmak isteyenler içindir.
+Vale'yi bilgisayarınıza kurup, vale-turkish'i üzerine Türkçe dil paketi olarak ekleyebilirsiniz. Bu yol, pre-commit veya CI/CD kullanmadan doğrudan komut satırından çalışmak isteyenler içindir.
 
 #### Adım 1: Vale'i kurun
 

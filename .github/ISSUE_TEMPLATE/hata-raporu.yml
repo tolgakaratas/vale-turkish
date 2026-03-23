@@ -1,0 +1,53 @@
+name: Hata Raporu
+description: Bir hata veya yanlış davranış bildirin
+title: "[Hata]: "
+labels: ["hata"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Hata raporunuz için teşekkürler! Lütfen aşağıdaki bilgileri doldurun.
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Hatanın açıklaması
+      description: Ne oldu? Ne olmasını bekliyordunuz?
+      placeholder: "Örnek: 'birşey' kelimesinde hata vermesi gerekirken vermiyor."
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Yeniden üretme adımları
+      description: Hatayı nasıl tekrarlayabiliriz?
+      value: |
+        1. Şu dosyayı oluşturun: `test.md`
+        2. İçine şunu yazın: ...
+        3. Şu komutu çalıştırın: `vale test.md`
+        4. Beklenen sonuç: ...
+        5. Gerçekleşen sonuç: ...
+    validations:
+      required: true
+
+  - type: dropdown
+    id: integration
+    attributes:
+      label: Hangi entegrasyonu kullanıyorsunuz?
+      options:
+        - Yerel Vale kurulumu
+        - Pre-commit
+        - GitHub Actions
+        - GitLab CI
+        - VS Code
+    validations:
+      required: true
+
+  - type: input
+    id: vale-version
+    attributes:
+      label: Vale sürümü
+      placeholder: "vale --version çıktısı (ör: vale v3.9.0)"
+    validations:
+      required: false
