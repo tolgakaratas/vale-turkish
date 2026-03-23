@@ -42,7 +42,7 @@ runs:
     - name: Türkçe kurallarla denetle
       shell: bash
       run: |
-        ACTION_DIR="${{ github.action_path }}"
+        ACTION_DIR="$(realpath "${{ github.action_path }}")"
         STYLES_PATH="${ACTION_DIR}/styles"
 
         # Geçici .vale.ini oluştur
