@@ -40,3 +40,9 @@ etmektedir
 neticesinde
 konuyla
 ekte
+
+# Spelling False Positive Düzeltmeleri
+sonucunda
+Bununla
+listesini
+yeniden
