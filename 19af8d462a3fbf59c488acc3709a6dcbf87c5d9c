@@ -1,0 +1,43 @@
+library.json
+  1d815db16820323f 4-5,7-8
+.vale.ini
+  1d815db16820323f 2,19,22-35
+README.md
+  1d815db16820323f 5,9,60,176,293,379,391,418-428,453
+styles/Turkish/meta.json
+  1d815db16820323f 9-10
+.github/ISSUE_TEMPLATE/config.yml
+  1d815db16820323f 4
+hooks/vale-turkish.sh
+  1d815db16820323f 198-209,213-214
+.github/workflows/test.yml
+  1d815db16820323f 10-12
+.gitlab/vale-turkish.yml
+  1d815db16820323f 5,54-55
+.pre-commit-hooks.yaml
+  1d815db16820323f 6
+LICENSE
+  1d815db16820323f 3
+action.yml
+  1d815db16820323f 2,96-101
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.1.17",
+  "base_commit_sha": "19af8d462a3fbf59c488acc3709a6dcbf87c5d9c",
+  "prompts": {
+    "1d815db16820323f": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "be17d1d5-b85b-442f-8fb0-a279c748dda5",
+        "model": "claude-opus-4-6"
+      },
+      "human_author": "Tolga Karatas <tolgakaratas@gmail.com>",
+      "messages": [],
+      "total_additions": 88,
+      "total_deletions": 45,
+      "accepted_lines": 74,
+      "overriden_lines": 0
+    }
+  }
+}
