@@ -1,0 +1,40 @@
+.github/workflows/test.yml
+  1d815db16820323f 85-88
+fixtures/clean.md
+  1d815db16820323f 38-51
+.github/workflows/release.yml
+  1d815db16820323f 65-66
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.1.17",
+  "base_commit_sha": "7bab373fc118006ac05ea9c295f92155bce2140f",
+  "prompts": {
+    "1d815db16820323f": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "be17d1d5-b85b-442f-8fb0-a279c748dda5",
+        "model": "claude-opus-4-6"
+      },
+      "human_author": "Tolga Karatas <tolgakaratas@gmail.com>",
+      "messages": [],
+      "total_additions": 24,
+      "total_deletions": 5,
+      "accepted_lines": 20,
+      "overriden_lines": 0
+    },
+    "4fb8bc941021d570": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "4ce1fafc-7a45-4eb1-87c7-8020851776f4",
+        "model": "claude-opus-4-6"
+      },
+      "human_author": "Tolga Karatas <tolgakaratas@gmail.com>",
+      "messages": [],
+      "total_additions": 0,
+      "total_deletions": 0,
+      "accepted_lines": 56,
+      "overriden_lines": 0
+    }
+  }
+}
