@@ -14,7 +14,7 @@ jq '
     {
       description: .Message,
       check_name: .Check,
-      fingerprint: ("\($file):\(.Line):\(.Check)" | @base64),
+      fingerprint: ($file + ":" + (.Line|tostring) + ":" + .Check),
       severity: (
         if .Severity == "error" then "major"
         elif .Severity == "warning" then "minor"
